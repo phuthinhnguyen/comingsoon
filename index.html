@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    .content{
+        height: 100%;
+        background-image: url("forestbridge.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        animation: content-animation 0.8s;
+    }
+    .logo{
+        margin-left: 30px;
+        position: fixed;
+        font-size: larger;
+    }
+    .powered{
+        margin-left: 30px;
+        position:fixed;
+        bottom: 0px;
+        font-size: 15px;
+    }
+    a{
+        color: white;
+    }
+    .coming{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+      
+    }
+    .coming1{
+        margin: 20px;
+        font-size: 60px;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation: animation 0.4s;
+    }
+    .hr{
+        width: 40%;
+    }
+    .coming2{
+        font-size: 20px; 
+        text-align: center;
+    }
+    @keyframes content-animation{
+        0%{opacity: 0; }
+        50%{opacity: 0.5;}
+        100%{opacity: 1;}
+    }
+    @keyframes animation{
+        0% {position: absolute;top:-1000%;opacity: 0;}
+        100% {position: absolute;top:0px;transform: translate(-50%,0%);opacity: 1;}
+    }
+
+</style>
+<body>
+    <div class="content">
+        <p class="logo">Logo</p>
+        <div class="coming">
+            <h1 class="coming1">COMING SOON</h1>
+            <hr class="hr">
+            <p class="coming2">35 days left</p>
+        </div>
+        <p class="powered">Powered by <a href="">w3.css</a></p>
+    </div>
+ 
+
+ 
+</body>
+</html>
